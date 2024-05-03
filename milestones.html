@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milestones Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="milestone.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Link icon for going back to home -->
+      <a href="index.html" class="btn btn-light mt-3">
+        <i class="fas fa-home"></i> Home
+      </a>
+
+      <h1 class="mt-5">Milestones Game</h1>
+      <div class="timeline border border-dark p-4 mb-4" id="timeline">
+        <!-- Timeline placeholders for each generation with labels -->
+        <div class="generation">
+          <div class="placeholder" id="gen1"><label>1G</label></div>
+        </div>
+        <div class="generation">
+          <div class="placeholder" id="gen2"><label>2G</label></div>
+        </div>
+        <div class="generation">
+          <div class="placeholder" id="gen3"><label>3G</label></div>
+        </div>
+        <div class="generation">
+          <div class="placeholder" id="gen4"><label>4G</label></div>
+        </div>
+
+        <div class="generation">
+          <div class="placeholder" id="gen5"><label>5G</label></div>
+        </div>
+      </div>
+      <div class="milestones d-flex flex-wrap justify-content-center">
+        <!-- Draggable images with data-generation attributes for validation -->
+        <img
+          src="1G.png"
+          alt="1G"
+          id="img1G"
+          class="draggable img-fluid m-2"
+          draggable="true"
+          data-generation="gen1"
+        />
+        <img
+          src="2G.png"
+          alt="2G"
+          id="img2G"
+          class="draggable img-fluid m-2"
+          draggable="true"
+          data-generation="gen2"
+        />
+        <img
+          src="3G.png"
+          alt="3G"
+          id="img3G"
+          class="draggable img-fluid m-2"
+          draggable="true"
+          data-generation="gen3"
+        />
+        <img
+          src="4G.png"
+          alt="4G"
+          id="img4G"
+          class="draggable img-fluid m-2"
+          draggable="true"
+          data-generation="gen4"
+        />
+        <img
+          src="5G.png"
+          alt="5G"
+          id="img5G"
+          class="draggable img-fluid m-2"
+          draggable="true"
+          data-generation="gen5"
+        />
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

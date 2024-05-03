@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matching Game</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="matching.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>5G Technology Matching Game</h1>
+      <div class="row">
+        <div class="column" id="columnA">
+          <ul>
+            <li id="mmWave" class="draggable">mmWave</li>
+            <li id="networkSlicing" class="draggable">Network Slicing</li>
+            <li id="beamforming" class="draggable">Beamforming</li>
+            <li id="MIMO" class="draggable">MIMO</li>
+            <li id="lowLatency" class="draggable">Low Latency</li>
+          </ul>
+        </div>
+        <div class="column" id="columnB">
+          <ul>
+            <li data-match="mmWave">
+              High-frequency spectrum bands that enable very fast 5G speeds
+            </li>
+            <li data-match="networkSlicing">
+              Creating customized virtual networks on a single 5G infrastructure
+            </li>
+            <li data-match="beamforming">
+              A technique that focuses radio signals into targeted beams for
+              better connection strength and reliability
+            </li>
+            <li data-match="MIMO">
+              Utilizing multiple antennas at both transmitter and receiver to
+              improve signal
+            </li>
+            <li data-match="lowLatency">
+              The ability to deliver extremely fast response times
+            </li>
+          </ul>
+        </div>
+      </div>
+      <svg id="svg"></svg>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="matching.js"></script>
+  </body>
+</html>

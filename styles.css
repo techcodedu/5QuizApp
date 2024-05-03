@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.game-options {
+  display: flex;
+  justify-content: center;
+}
+
+.game-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin: 0 20px;
+}
+
+.game-option img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.game-option span {
+  font-size: 18px;
+}
+/* CSS for modern hover effect */
+
+.game-option {
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-option:hover {
+  transform: scale(1.05);
+}
+.timeline {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.milestones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.milestones img {
+  width: 100px;
+  margin: 10px;
+}
